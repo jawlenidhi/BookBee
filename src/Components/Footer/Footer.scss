@@ -1,0 +1,40 @@
+.footerFile {
+    padding: 0;
+    height: auto;
+    width: auto;
+    background: #873cd1;
+    .footerWrapper {
+        padding: 2vmin;
+        margin-top: 0vmin;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .footer-list {
+            list-style: none;
+            align-items: center;
+            .footer-item {
+                padding: 1vmin;
+                font-size: 3.5vmin;
+                font-weight: 700;
+                color: #efefef;
+                &:hover {
+                    transition: all 0.2s ease-in-out;
+                    color: #4d0a8f;
+                    cursor: pointer;
+                }
+            }
+        }
+        .footer-text {
+            .footer-header {
+                font-size: 4vmin;
+                font-weight: 500;
+                font-family: Anton, sans-serif;
+            }
+            .footer-subheader {
+                font-size: 3vmin;
+                font-weight: 600;
+                color: #4d0a8f;
+            }
+        }
+    }
+}

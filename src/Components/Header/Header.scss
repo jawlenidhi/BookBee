@@ -1,0 +1,86 @@
+.headerFile {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    .nav-bar {
+        padding: 0.5rem;
+        align-items: center;
+        .logo {
+            font-size: 2rem;
+            font-weight: 400;
+            font-family: "Anton", sans-serif;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        display: flex;
+        justify-content: space-around;
+        background-color: #a996f8;
+        .nav-list {
+            display: flex;
+            list-style: none;
+            .nav-item {
+                padding: 0.5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                font-weight: 600;
+                color: #330561;
+                cursor: pointer;
+                border-bottom: 3px solid #a996f8;
+                &:hover {
+                    border-bottom: 3px solid #330561;
+                    transition: 0.3s all ease-in-out;
+                }
+            }
+            @media (max-width: 800px) {
+                display: none;
+            }
+        }
+        .btn {
+            padding: 0.8rem;
+            border-radius: 1rem;
+            background: #330561;
+            color: #efefef;
+            font-family: Poppins, sans-serif;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                background-color: #873cd1;
+                transition: all 0.2s ease-in-out;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                transform: translateY(-5%);
+                box-shadow: 8px 4px 2px #330561;
+            }
+        }
+    }
+    .nav-bar-2 {
+        background: linear-gradient(to bottom, #4d0a8f, #5e58e7);
+        .nav-list {
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            .nav-item {
+                padding: 1.2vmin;
+                cursor: pointer;
+                border: 2px solid transparent;
+                transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                font-weight: 600;
+                color: #efefef;
+                &:hover {
+                    border: 2px solid #efefef;
+                    border-radius: 10px;
+                }
+            }
+            @media (max-width: 800px) {
+                display: none;
+            }
+        }
+    }
+}

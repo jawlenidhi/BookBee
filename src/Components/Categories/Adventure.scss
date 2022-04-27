@@ -1,0 +1,127 @@
+.AdventureFile {
+    margin-top: -2rem;
+    padding: 0;
+    height: 100%;
+    width: auto;
+    background: #a99cf8;
+    .button {
+        .a {
+            text-decoration: none;
+        }
+    }
+    .adventure-header {
+        justify-content: center;
+        text-align: center;
+        padding: 2vmin;
+        color: #4d0a8f;
+        font-weight: 600;
+        font-size: 6vmin;
+    }
+    .slider-div {
+        margin: 3vmin;
+        height: 100%;
+        width: auto;
+    }
+    .book-header {
+        text-align: center;
+        color: #4d0a8f;
+        font-size: 6.5vmin;
+        font-weight: 600;
+    }
+    .book-wrapper {
+        align-items: center;
+        place-items: center;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        @media (max-width: 1024px) {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        @media(max-width: 768px) {
+            grid-template-columns: auto;
+        }
+        .book-card {
+            width: auto;
+            height: auto;
+            background: #211049;
+            margin: 15px;
+            padding: 25px;
+            border-radius: 10px;
+            &:hover {
+                transition: all 0.2s ease-in-out;
+                transform: scale(1.01);
+            }
+            @media (max-width: 800px) {
+                width: 55vmin;
+                padding-right: 2rem;
+            }
+            align-items: center;
+            place-items: center;
+            .title {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .author {
+                font-size: 14px;
+                color: #873cd1;
+            }
+            .book-image {
+                height: 60vmin;
+                width: auto;
+                object-fit: contain;
+                @media(max-width: 800px) {
+                    height: 90vmin;
+                }
+            }
+            .button-div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .Read {
+                    padding: 10px;
+                    outline: none;
+                    flex: 0.5;
+                    border: none;
+                    border-radius: 10px;
+                    color: #efefef;
+                    background: #873cd1;
+                    font-family: Poppins, sans-serif;
+                    font-weight: 600;
+                    &:hover {
+                        transition: all 0.2s ease-in-out;
+                        background: #6224a0;
+                        color: #efefef;
+                    }
+                }
+                .Download {
+                    margin-top: 5px;
+                    flex: 0.5;
+                    padding: 10px;
+                    outline: none;
+                    border: none;
+                    border-radius: 10px;
+                    color: #4d0a8f;
+                    background: #a99cf8;
+                    font-family: Poppins, sans-serif;
+                    font-weight: 600;
+                    &:hover {
+                        transition: all 0.2s ease-in-out;
+                        background: #6546f0;
+                        color: #efefef;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:800px) {
+        margin-top: -1.2rem;
+    }
+    .book-empty {
+        height: calc(100vh-70px);
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

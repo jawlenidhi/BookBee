@@ -1,0 +1,19 @@
+.CommunityFile {
+    height: 100vh;
+    width: auto;
+    background: #a99cf8;
+    .communityWrapper {
+        align-items: center;
+        place-items: center;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 100vh;
+        .communityTemplate {
+            font-size: 9.5vmin;
+            @media (max-width: 800px) {
+                font-size: 5.5vmin;
+            }
+        }
+    }
+}

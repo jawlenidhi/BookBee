@@ -1,0 +1,128 @@
+.TrendingFile {
+  margin-top: -2rem;
+  padding: 0;
+  height: 100%;
+  width: auto;
+  background: #a99cf8;
+}
+.TrendingFile .button .a {
+  text-decoration: none;
+}
+.TrendingFile .trending-header {
+  justify-content: center;
+  text-align: center;
+  padding: 2vmin;
+  color: #4d0a8f;
+  font-weight: 600;
+  font-size: 6vmin;
+}
+.TrendingFile .slider-div {
+  margin: 3vmin;
+  height: 100%;
+  width: auto;
+}
+.TrendingFile .book-header {
+  text-align: center;
+  color: #4d0a8f;
+  font-size: 6.5vmin;
+  font-weight: 600;
+}
+.TrendingFile .book-wrapper {
+  align-items: center;
+  place-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+@media (max-width: 1024px) {
+  .TrendingFile .book-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 768px) {
+  .TrendingFile .book-wrapper {
+    grid-template-columns: auto;
+  }
+}
+.TrendingFile .book-wrapper .book-card {
+  width: auto;
+  height: auto;
+  background: #211049;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  align-items: center;
+  place-items: center;
+}
+.TrendingFile .book-wrapper .book-card:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.01);
+}
+@media (max-width: 800px) {
+  .TrendingFile .book-wrapper .book-card {
+    width: 55vmin;
+    padding-right: 2rem;
+  }
+}
+.TrendingFile .book-wrapper .book-card .title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.TrendingFile .book-wrapper .book-card .author {
+  font-size: 14px;
+  color: #873cd1;
+}
+.TrendingFile .book-wrapper .book-card .book-image {
+  height: 55vmin;
+  width: auto;
+  object-fit: contain;
+}
+@media (max-width: 800px) {
+  .TrendingFile .book-wrapper .book-card .book-image {
+    height: 90vmin;
+  }
+}
+.TrendingFile .book-wrapper .book-card .button-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.TrendingFile .book-wrapper .book-card .button-div .Read {
+  padding: 10px;
+  outline: none;
+  flex: 0.5;
+  border: none;
+  border-radius: 10px;
+  color: #efefef;
+  background: #873cd1;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+.TrendingFile .book-wrapper .book-card .button-div .Read:hover {
+  transition: all 0.2s ease-in-out;
+  background: #6224a0;
+  color: #efefef;
+}
+.TrendingFile .book-wrapper .book-card .button-div .Download {
+  margin-top: 5px;
+  flex: 0.5;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: #4d0a8f;
+  background: #a99cf8;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+.TrendingFile .book-wrapper .book-card .button-div .Download:hover {
+  transition: all 0.2s ease-in-out;
+  background: #6546f0;
+  color: #efefef;
+}
+@media (max-width: 800px) {
+  .TrendingFile {
+    margin-top: -1.2rem;
+  }
+}

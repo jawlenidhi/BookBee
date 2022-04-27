@@ -1,0 +1,80 @@
+.SignUpFile {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .signupWrapper {
+        height: 100vh;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .image-here {
+            flex: 0.3;
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            @media(max-width: 1024px) {
+                display: none;
+            }
+        }
+        .signup-form {
+            height: 100%;
+            background: #692da5;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #fff;
+            .input-here {
+                background: transparent;
+                padding: 10px;
+                border: none;
+                width: 50%;
+                outline: none;
+                font-size: 3vmin;
+                color: #fff;
+                border: 2px solid transparent;
+                border-bottom: 2px solid #efefef;
+                &:focus {
+                    border: 2px solid #efefef;
+                    transition: all 0.3s ease-in-out;
+                }
+                &::placeholder {
+                    color: #efefef
+                }
+            }
+            .btn-div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .submit-button {
+                    padding: 10px;
+                    border-radius: 10px;
+                    width: 100%;
+                    background: #330561;
+                    color: #efefef;
+                    font-family: Poppins, sans-serif;
+                    font-weight: 600;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #873cd1;
+                        transition: all 0.2s ease-in-out;
+                        -webkit-transition: all 0.2s ease-in-out;
+                        -moz-transition: all 0.2s ease-in-out;
+                        transform: translateY(-5%);
+                        box-shadow: 8px 4px 2px #330561;
+                    }
+                }
+                .something {
+                    margin: 10px;
+                    font-size: 2.5vmin;
+                }
+            }
+        }
+    }
+}

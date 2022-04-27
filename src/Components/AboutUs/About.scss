@@ -1,0 +1,46 @@
+.AboutFile {
+    height: 100vh;
+    width: auto;
+    background: #a99cf8;
+    .aboutWrapper {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        height: 100vh;
+        .aboutTemplate {
+            font-size: 10.5vmin;
+            @media (max-width: 800px) {
+                font-size: 8vmin;
+            }
+        }
+        .para {
+            padding: 10px;
+            color: #000d1a;
+            max-width: 100vmin;
+            font-size: 4vmin;
+            font-weight: 700;
+            @media(max-width: 800px) {
+                font-size: 6.7vmin;
+            }
+        }
+        .members-wrapper {
+            display: flex;
+            align-items: center;
+            .member-image {
+                height: 35vmin;
+                width: auto;
+                object-fit: contain;
+                margin-left: 20px;
+                @media(max-width: 800px) {
+                    margin: 10px;
+                    height: 33vmin;
+                }
+            }
+            @media(max-width:800px) {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+        }
+    }
+}
